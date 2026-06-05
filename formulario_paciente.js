@@ -130,7 +130,7 @@ document.getElementById('anamnese-form').addEventListener('submit', async functi
   } catch (err) {
     setBtnLoading(false);
     statusMsg.className = 'error';
-    statusMsg.textContent = 'Não foi possível enviar a ficha. Verifique sua conexão e tente novamente.';
+    statusMsg.textContent = 'Não foi possível enviar a ficha. Verifique sua conexão e tente novamente.' + err;
     statusMsg.style.display = 'block';
   }
 });
