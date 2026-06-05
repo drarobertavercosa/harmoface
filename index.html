@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Anamnese — Roberta Verçosa Coelho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="formulario_paciente.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-container">
+      <span class="ornament">✦</span>
+      <img class="logo-img" src="logo.png" alt="Roberta Verçosa Coelho" onerror="this.style.display='none'">
+      <span class="ornament">✦</span>
+    </div>
+    <p class="header-title">Ficha de Anamnese</p>
+    <p class="header-sub">Harmonização Facial · Preenchimento Confidencial</p>
+  </header>
+
+  <div id="form-area">
+
+    <div class="note-box">
+      Suas informações são confidenciais e utilizadas exclusivamente para garantir um atendimento seguro e personalizado. Preencha com atenção todos os campos.
+    </div>
+
+    <form id="anamnese-form" novalidate>
+
+      <!-- SEÇÃO 1: DADOS PESSOAIS -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-number">1</div>
+          <h2 class="section-title">Dados Pessoais</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="grid-1">
+          <div class="field" id="f-nome">
+            <label>Nome completo <span class="req">*</span></label>
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
+            <span class="field-error">Por favor, informe seu nome.</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label>Data de nascimento <span class="req">*</span></label>
+            <input type="date" name="data_nascimento" required>
+          </div>
+          <div class="field">
+            <label>Profissão</label>
+            <input type="text" name="profissao" placeholder="Sua profissão">
+          </div>
+          <div class="field">
+            <label>Estado civil</label>
+            <select name="estado_civil">
+              <option value="">Selecione</option>
+              <option>Solteiro(a)</option>
+              <option>Casado(a)</option>
+              <option>Divorciado(a)</option>
+              <option>Viúvo(a)</option>
+              <option>União estável</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Nacionalidade</label>
+            <input type="text" name="nacionalidade" placeholder="Brasileira(o)">
+          </div>
+          <div class="field">
+            <label>Hobby</label>
+            <input type="text" name="hobby" placeholder="Suas atividades favoritas">
+          </div>
+          <div class="field">
+            <label>Animal de estimação</label>
+            <input type="text" name="animal" placeholder="Tipo e nome do pet">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid-1">
+          <div class="field">
+            <label>Endereço</label>
+            <input type="text" name="endereco" placeholder="Rua, número">
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:1.25rem">
+          <div class="field">
+            <label>Complemento</label>
+            <input type="text" name="complemento" placeholder="Apto, bloco...">
+          </div>
+          <div class="field">
+            <label>Bairro</label>
+            <input type="text" name="bairro" placeholder="Bairro">
+          </div>
+          <div class="field">
+            <label>CEP</label>
+            <input type="text" name="cep" placeholder="00000-000">
+          </div>
+          <div class="field col-span-2">
+            <label>Cidade</label>
+            <input type="text" name="cidade" placeholder="Sua cidade">
+          </div>
+          <div class="field">
+            <label>Estado</label>
+            <select name="estado">
+              <option value="">UF</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+              <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+              <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+              <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+              <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+              <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+              <option>SP</option><option>SE</option><option>TO</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label>RG</label>
+            <input type="text" name="rg" placeholder="0000000-0">
+          </div>
+          <div class="field" id="f-cpf">
+            <label>CPF <span class="req">*</span></label>
+            <input type="text" name="cpf" placeholder="000.000.000-00" required>
+            <span class="field-error">Informe um CPF válido.</span>
+          </div>
+          <div class="field" id="f-email">
+            <label>E-mail <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="seu@email.com" required>
+            <span class="field-error">Informe um e-mail válido.</span>
+          </div>
+          <div class="field">
+            <label>Instagram</label>
+            <input type="text" name="instagram" placeholder="@seuperfil">
+          </div>
+          <div class="field" id="f-tel">
+            <label>Telefone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" name="telefone" placeholder="(81) 99999-9999" required>
+            <span class="field-error">Informe seu telefone.</span>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="field">
+          <label>Como nos conheceu?</label>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Indicação"> Indicação</label>
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Site / Blog"> Site / Blog</label>
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Rádio / TV"> Rádio / TV</label>
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Revistas e Jornais"> Revistas e Jornais</label>
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Instagram"> Instagram</label>
+            <label class="check-item"><input type="checkbox" name="conheceu" value="Outros"> Outros</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 2: DADOS CLÍNICOS -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-number">2</div>
+          <h2 class="section-title">Dados Clínicos</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="grid-1">
+          <div class="field">
+            <label>Toma algum medicamento? Tomou antitetânica recentemente?</label>
+            <input type="text" name="medicamento" placeholder="Informe o medicamento ou N/A">
+          </div>
+          <div class="field">
+            <label>Faz tratamento médico atualmente?</label>
+            <input type="text" name="tratamento_medico" placeholder="Descreva ou informe Não">
+          </div>
+          <div class="field">
+            <label>É alérgico(a) a alguma coisa? Picada de abelha?</label>
+            <input type="text" name="alergia" placeholder="Descreva a alergia ou informe Não">
+          </div>
+          <div class="field">
+            <label>Já tomou anestesia no dentista? Teve alguma reação?</label>
+            <input type="text" name="anestesia" placeholder="Descreva ou informe Não">
+          </div>
+          <div class="field">
+            <label>Tem algum problema de saúde? Lúpus?</label>
+            <input type="text" name="problema_saude" placeholder="Descreva ou informe Não">
+          </div>
+          <div class="field">
+            <label>É hipertenso(a)? Controla a pressão com medicamento? Qual?</label>
+            <input type="text" name="hipertensao" placeholder="Descreva ou informe Não">
+          </div>
+          <div class="field">
+            <label>Tem algum problema renal? Tem preenchimento permanente?</label>
+            <input type="text" name="renal" placeholder="Descreva ou informe Não">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label>É hemofílico(a)?</label>
+            <div class="pill-group">
+              <label class="pill-label"><input type="radio" name="hemofilia" value="Sim"><span class="pill">Sim</span></label>
+              <label class="pill-label"><input type="radio" name="hemofilia" value="Não" checked><span class="pill">Não</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label>É diabético(a)?</label>
+            <div class="pill-group">
+              <label class="pill-label"><input type="radio" name="diabetes" value="Sim"><span class="pill">Sim</span></label>
+              <label class="pill-label"><input type="radio" name="diabetes" value="Não" checked><span class="pill">Não</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid-1">
+          <div class="field">
+            <label>Tem algum problema de coagulação sanguínea?</label>
+            <input type="text" name="coagulacao" placeholder="Descreva ou informe Não">
+          </div>
+          <div class="field">
+            <label>Está grávida ou é lactante? Tem quelóide?</label>
+            <input type="text" name="gravidez_queloide" placeholder="Descreva ou informe Não">
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 3: EXPECTATIVA -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-number">3</div>
+          <h2 class="section-title">Expectativa do Paciente</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="field">
+          <label>Por quais razões você procurou nossa clínica?</label>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" name="motivo" value="Dores"> Dores</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Estética do sorriso"> Estética do sorriso</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Estética da face"> Estética da face</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Rugas"> Rugas</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Dificuldade mastigatória"> Dificuldade mastigatória</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Dor de cabeça"> Dor de cabeça</label>
+            <label class="check-item"><input type="checkbox" name="motivo" value="Outros"> Outros</label>
+          </div>
+        </div>
+
+        <div style="margin-top:1.25rem">
+          <div class="field">
+            <label>Descreva suas expectativas ou observações adicionais</label>
+            <textarea name="expectativas" placeholder="Escreva aqui o que deseja alcançar com o tratamento, dúvidas ou outras informações relevantes..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 4: FOTO -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-number">4</div>
+          <h2 class="section-title">Foto do Paciente</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p style="font-size:0.85rem; color:var(--mid); margin-bottom:1.25rem; line-height:1.65;">
+          Envie uma foto recente de frente, com boa iluminação e sem óculos. A imagem será usada exclusivamente para fins clínicos.
+        </p>
+
+        <div class="upload-zone" id="upload-zone">
+          <input type="file" id="foto-input" name="foto" accept="image/jpeg,image/png,image/webp">
+          <img id="photo-preview" alt="Pré-visualização da foto">
+          <svg class="upload-icon" id="upload-icon-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" stroke="#C9A96E" stroke-width="1"/>
+            <path d="M20 26V14M20 14L15 19M20 14L25 19" stroke="#C9A96E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 28h14" stroke="#C9A96E" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <p class="upload-title" id="upload-text">Clique para enviar sua foto</p>
+          <p class="upload-hint">JPG, PNG ou WEBP · Máx. 5 MB</p>
+        </div>
+      </div>
+
+      <!-- SUBMIT -->
+      <div class="submit-area">
+        <p style="font-size:0.78rem; color:var(--mid); margin-bottom:1.5rem; line-height:1.6; letter-spacing:0.03em;">
+          Ao enviar esta ficha, declaro que as informações prestadas são verdadeiras e autorizo o uso dos dados para fins de atendimento clínico.
+        </p>
+        <button type="submit" class="btn-submit" id="btn-submit">
+          <span id="btn-text">Enviar Ficha</span>
+          <svg id="btn-arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="btn-spinner" class="spinner" style="display:none"></span>
+        </button>
+        <div id="status-message"></div>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- SUCCESS -->
+  <div id="success-screen">
+    <div class="success-icon">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path d="M6 14l6 6 10-12" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h2 class="success-title">Ficha enviada com sucesso</h2>
+    <p class="success-text">Obrigada pelo seu cadastro.<br>Em breve entraremos em contato para agendar seu atendimento.</p>
+    <p style="margin-top:2rem;font-size:0.78rem;color:var(--mid);letter-spacing:0.1em;text-transform:uppercase;">Roberta Verçosa Coelho · (81) 9122.1037</p>
+  </div>
+
+  <footer class="form-footer">
+    <span class="footer-ornament">✦ ✦ ✦</span>
+    <p class="footer-text">Habilitação em Toxina Botulínica e Preenchedores Faciais · Odonto Partners-SP</p>
+  </footer>
+
+</div>
+
+<script src="formulario_paciente.js"></script>
+</body>
+</html>

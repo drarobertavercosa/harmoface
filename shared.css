@@ -1,0 +1,29 @@
+/* ════════════════════════════════════════════════════════════════════
+   HarmoFace — Estilos Compartilhados
+   ════════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold:        #B8913A;      /* dourado mais saturado para contraste */
+  --gold-light:  #D4AA6A;      /* dourado claro — decorativo */
+  --gold-subtle: #F5EDD8;      /* fundo dourado suave */
+  --cream:       #F5F2EE;      /* fundo levemente mais escuro */
+  --dark:        #1E1A15;      /* texto principal — quase preto */
+  --mid:         #4A3F35;      /* texto secundário — marrom escuro */
+  --muted:       #7A6E65;      /* texto terciário — ainda legível */
+  --border:      #D4C8BC;      /* bordas mais visíveis */
+  --border-dark: #B5A898;      /* bordas de destaque */
+  --white:       #FFFFFF;
+  --error:       #8B1F1F;
+  --success:     #0A5A44;
+}
+
+body {
+  background: var(--cream);
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;            /* peso base aumentado de 300 para 400 */
+  color: var(--dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
