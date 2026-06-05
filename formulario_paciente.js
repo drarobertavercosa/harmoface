@@ -3,7 +3,7 @@
 // ════════════════════════════════════════════════════════════════════
 
 // ▶ URL do Google Apps Script (substitua se necessário)
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw2ovaxTOlp0ut6P3mlFF8Mf5ZtXTFqHqzWWrrBZcidiyVtUBXMhzxPV4s414gSOhCy8g/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwAzuvEADjn-6wjbehN3YXrZaIAVvK59OxI1T_y5kb9tTnwXSMxKqweY3dOOI96pPfVYA/exec';
 
 // ─── ELEMENTOS ────────────────────────────────────────────────────
 const fotoInput   = document.getElementById('foto-input');
